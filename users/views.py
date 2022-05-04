@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 def register(request):
     """Register a new user """
 
-    if request.method !="POST":
+    if request.method != 'POST':
         form=UserCreationForm()
     else:
         form=UserCreationForm(data=request.POST)
